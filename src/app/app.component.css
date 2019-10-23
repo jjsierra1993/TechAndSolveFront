@@ -1,0 +1,141 @@
+
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #1976d2;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .content {
+    display: flex;
+    margin: 32px auto;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 16px;
+  }
+
+  input {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 20px;
+    width: 200px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  input#controlFile{
+    margin: 16px;
+    border-radius: 10px;
+    border: 0px #eee;
+    height: 10px;
+  }
+
+  .container input:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .container input:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .container input:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(black, 0.35);
+  }
+
+  button {
+    color: #24292e;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: 3px;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    margin: 16px;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  }
+
+  button:hover, input#controlFile:hover {
+    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+    border-color: rgba(27,31,35,.35);
+    background-position: -.5em;
+  }
+
+  #iconOk{
+    height: 10px;
+    width: 10px;
+  }
+
+  .text-danger{
+      color: tomato;
+      margin: 16px;
+  }
+
+  .sub-content{
+    display: flex;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .is-invalid{
+      border: 1px tomato solid !important;
+  }
+
+  .error-process{
+    color: tomato;
+    margin: 16px;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+
+    .container > *:not(.circle-link) ,
+    button, input {
+      width: 100%;
+    }
+
+    input:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    input.highlight-card span {
+      margin-left: 72px;
+    }
+  }
